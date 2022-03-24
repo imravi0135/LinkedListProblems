@@ -52,6 +52,20 @@ namespace LinkedListProblems
                 temp = temp.next;
             }
         }
+        public void AppendNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                Tail.next = node;
+                Tail = node;
+            }
+        }
+
     }
 }
 

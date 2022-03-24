@@ -20,6 +20,10 @@ namespace LinkedListProblems
             linkedList.AddNode(node_3);
 
             linkedList.Display();
+
+            Node node_4 = new Node(23);
+            linkedList.AppendNode(node_4);
+            linkedList.Display();
             Console.ReadLine();
         }
     }

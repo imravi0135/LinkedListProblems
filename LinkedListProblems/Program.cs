@@ -34,6 +34,18 @@ namespace LinkedListProblems
 
             linkedList.DeleteEndNode();
             linkedList.Display();
+
+            Console.WriteLine("Enter Number want to Search");
+            int data = int.Parse(Console.ReadLine());
+            bool res = linkedList.search(data);
+            if (res == true)
+            {
+                Console.WriteLine("Data is found");
+            }
+            else
+            {
+                Console.WriteLine("Data is not found");
+            }
             Console.ReadLine();
         }
     }

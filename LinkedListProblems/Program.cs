@@ -31,6 +31,9 @@ namespace LinkedListProblems
 
             linkedList.DeleteNodeatFirst();
             linkedList.Display();
+
+            linkedList.DeleteEndNode();
+            linkedList.Display();
             Console.ReadLine();
         }
     }

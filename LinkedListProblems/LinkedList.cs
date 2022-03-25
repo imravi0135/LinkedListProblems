@@ -88,6 +88,28 @@ namespace LinkedListProblems
             this.Head = this.Head.next;
             Console.WriteLine("Remove from Linked List" + temp.data);
         }
+        public void DeleteEndNode()
+        {
+            if (this.Head == null)
+            {
+                Console.WriteLine("Nothing to delete list is empty");
+            }
+            else
+            {
+                if (Head == null)
+                {
+                    Console.WriteLine("Nothing To Delete");
+                    return;
+                }
+                Node temp = Head;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                Console.WriteLine("Remove from Linked List = " + temp.next.data);
+                temp.next = null;
+            }
+        }
     }
 }
 

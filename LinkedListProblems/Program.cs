@@ -28,6 +28,9 @@ namespace LinkedListProblems
             Node node_5 = new Node(24);
             linkedList.AddNodeatStart(node_5);
             linkedList.Display();
+
+            linkedList.DeleteNodeatFirst();
+            linkedList.Display();
             Console.ReadLine();
         }
     }

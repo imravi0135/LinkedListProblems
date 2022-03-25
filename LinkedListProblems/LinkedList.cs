@@ -10,7 +10,7 @@ namespace LinkedListProblems
     {
         public Node Head;
         public Node Tail;
-        
+
         public LinkedList()
         {
             Head = null;
@@ -65,7 +65,19 @@ namespace LinkedListProblems
                 Tail = node;
             }
         }
-
+        public void AddNodeatStart(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                node.next = Head;
+                Head = node;
+            }
+        }
     }
 }
 

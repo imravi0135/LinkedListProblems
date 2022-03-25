@@ -24,6 +24,10 @@ namespace LinkedListProblems
             Node node_4 = new Node(23);
             linkedList.AppendNode(node_4);
             linkedList.Display();
+
+            Node node_5 = new Node(24);
+            linkedList.AddNodeatStart(node_5);
+            linkedList.Display();
             Console.ReadLine();
         }
     }

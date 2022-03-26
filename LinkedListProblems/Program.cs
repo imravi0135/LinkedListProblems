@@ -46,6 +46,13 @@ namespace LinkedListProblems
             {
                 Console.WriteLine("Data is not found");
             }
+
+            Node node_6 = new Node(28);    
+            linkedList.Display();
+            Console.WriteLine("select position to add new Element");
+            int data1 = int.Parse(Console.ReadLine());
+            linkedList.AddSpecificNode(node_6, data1);
+            linkedList.Display();
             Console.ReadLine();
         }
     }
